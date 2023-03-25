@@ -599,7 +599,7 @@ body {
     }
     .contact .contact-exp p{
       font-weight: 500;
-      margin-left: 15px;
+      margin: 0 15px;
     }
 
     .contact p.fixed{
@@ -623,7 +623,7 @@ body {
     }
 
     .contact .table_form{
-      margin: 20px 0 0 15px;
+      margin: 20px 15px 0 15px;
     }
     .contact .table{
       display: table;
@@ -645,7 +645,7 @@ body {
     }
     .contact .cell:nth-child(2n+1){
       padding-left: 0;
-      width: 7rem;
+      width: 7.3rem;
     }
 
     .contact .cell span{
@@ -654,26 +654,26 @@ body {
 
     .contact input[type="text"],
     .contact input[type="email"]{
-      width: 92%;
+      width: 100%;
       height: 25px;
       border: none;
       padding: 0 5px;
     }
     .contact textarea{
-      width: 92%;
+      width: 100%;
       height: 70px;
       border: none;
+      line-height: 1.3;
     }
     .contact .submit{
       text-align: center;
       margin-top: 20px;
     }
-    .contact .submit input[type="submit"]{
-      width: 200px;
-      height: 30px;
+
+    .contact .submit button{
+      padding: 5px 30px;
       background-color: #fff;
-      border: 1px #C8C8C8 solid;
-      font-size: 14px;
+      border: 1px #c5c5c5 solid;
     }
 
     /*ページトップへ戻る*/
