@@ -30,8 +30,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ================================================================================================ -->
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+    <meta name="keywords" content="ポートフォリオ">
+    <meta name="description" content="Memorie">
+    <meta name="auther" content="Memorie">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>確認画面</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
