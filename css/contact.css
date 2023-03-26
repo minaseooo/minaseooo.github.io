@@ -30,23 +30,23 @@ body {
   /*topここまで*/
   .inner{
     margin: 0 auto;
-    text-align: center;
-    width: 500px;
+    width: 480px;
   }
 
-  .inner h1{
-    font-size: 20px;
-    padding: 10px 0 0;
+  p.confirm-text{
+    margin:30px 0 40px;
+  }
+  .contact-form p{
+    margin: 5px 0 20px 0;
   }
 
   .confirm{
     text-align: left;
   }
-
   .button{
     margin-top: 50px;
+    text-align: center;
   }
-
 
   .button input[type=button]{
     padding: 10px 20px;
@@ -61,13 +61,13 @@ body {
       color: #fff;
     }
 
-  .button button[type=submit]{
+  .button input[type=submit]{
     padding: 10px 35px;
     background-color: #fff;
     border: 1px #858585 solid;
   }
 
-  .button button[type=submit]:hover{
+  .button input[type=submit]:hover{
     background-color: #2A489E;
     border-color: #2A489E;
     color: #fff;

@@ -179,25 +179,21 @@
         <div class="contact-exp">
           <p>CONTACT</p>
 
-          <form action="contact.php" method="post" id="mailform">
-            <div class="table_form">
-              <div class="table">
-                  <div class="row">
-                      <div class="cell"><label>お名前<span>*</span></label></div>
-                      <div class="cell required"><input type="text" name="name" placeholder="" value=""></div>
-                  </div>
-                  <div class="row">
-                      <div class="cell"><label>メールアドレス<span>*</span></label></div>
-                      <div class="cell required"><input type="text" name="email" placeholder="" value=""></div>
-                  </div>
-                  <div class="row">
-                      <div class="cell message"><label>お問い合わせ内容<span>*</span></label></div>
-                      <div class="cell required"><textarea name="content" rows="5" placeholder=""></textarea></div>
-                  </div>
-              </div>
-          </div><!--table_form-->
+          <form action="contact.php" method="post" id="form">
+            <div class="contact-form">
+              <label for="name">お名前<span>*</span></label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="contact-form">
+              <label for="email">メールアドレス<span>*</span></label>
+              <input type="text" id="email" name="email">
+            </div>
+            <div class="contact-form">
+              <label for="message">メッセージ<span>*</span></label>
+              <textarea id="message" name="message"></textarea>
+            </div>
 
-          <p class="submit"><button type="submit">確認画面へ</button></p>
+            <input class="btn" type="submit" value="確認">
           </form>
 
         </div>
@@ -209,7 +205,7 @@
         <a href="#">
           <i class="fa-solid fa-chevron-up"></i>
         </a>
-    </p>
+      </p>
 
 
       <footer>

@@ -602,6 +602,14 @@ body {
       margin: 0 15px;
     }
 
+    .contact #form{
+      margin: 15px;
+    }
+
+    .contact .contact-form{
+      margin-top: 10px;
+    }
+
     .contact p.fixed{
       position:absolute;
       top: 15rem;
@@ -622,33 +630,7 @@ body {
       z-index: -1;
     }
 
-    .contact .table_form{
-      margin: 20px 15px 0 15px;
-    }
-    .contact .table{
-      display: table;
-      border-collapse: collapse;
-      max-width: 700px;
-      width: 100%;
-    }
-    .contact .row{
-      display: table-row;
-    }
-    .contact .row .cell{
-      display: table-cell;
-      padding: 0 0 20px 15px;
-      font-size: 14px;
-      vertical-align: center;
-    }
-    .contact .table .row .message{
-      vertical-align: top;
-    }
-    .contact .cell:nth-child(2n+1){
-      padding-left: 0;
-      width: 7.3rem;
-    }
-
-    .contact .cell span{
+    .contact span{
       color: #FD2155;
     }
 
@@ -665,12 +647,10 @@ body {
       border: none;
       line-height: 1.3;
     }
-    .contact .submit{
+    .contact .btn{
+      display: block;
       text-align: center;
-      margin-top: 20px;
-    }
-
-    .contact .submit button{
+      margin: 20px auto 0;
       padding: 5px 30px;
       background-color: #fff;
       border: 1px #c5c5c5 solid;
