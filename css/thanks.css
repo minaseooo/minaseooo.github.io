@@ -54,6 +54,7 @@ body {
   }
 
   .top-button .top-page a{
+    display: block;
     font-size: 12px;
     color: #000;
     text-decoration: none;
