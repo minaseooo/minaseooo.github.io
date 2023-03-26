@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="inner">
             <p class="confirm-text">下記の内容でメッセージを送信します。<br>よろしければ「送信する」ボタンを押してください。</p>
             
-            <form action="thanks.php" method="post">
+            <form action="https://ss1.xrea.com/matsubaooo.s223.xrea.com/thanks.php" method="post">
                 <input type="hidden" name="token" value="<?php echo escape($token); ?>">
                 <div class="contact-form">
                     <label for="name">お名前</label>
