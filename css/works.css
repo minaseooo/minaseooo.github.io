@@ -96,7 +96,7 @@ body {
   .header input#menu:checked ~ nav {
     pointer-events: all;
     transform: scale3d(1,1,1);
-    width: 405px;
+    width: 500px;
     transition: width .4s cubic-bezier(.65,.32,.35,.65);
   }
   .header input#menu:checked ~ nav ul.main {opacity: 1;}
@@ -111,10 +111,10 @@ body {
   }
   .header nav ul.main {
     height: 40px;
-    margin: 0 0 0 3.3rem;
+    margin: 0 0 0 2.5rem;
   }
   .header nav ul.main li {
-    margin: 10px 15px 0 0;
+    margin: 10px 10px 0 0;
   }
   .header nav ul.main li a {
     font-size: 15px;
@@ -143,7 +143,7 @@ body {
     transform: translateY(-6px) rotate(-45deg);
   }
   .header input#menu:checked ~ nav {
-    width: 320px;
+    width: 360px;
   }
 }
 
@@ -256,6 +256,61 @@ body {
 }
 
 
+/* works_cording */
+#works_cording{
+    margin-top: -30px;
+    padding-top: 30px;
+}
+.works #works_cording .web-txt{
+    font-size: 20px;
+    margin: 50px 0 10px 10px;
+}
+#works_cording .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
+    z-index: 1;
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,0.75);
+}
+#works_cording .cording{/*ベースになるギャラリーを横並びに*/
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+#works_cording .cording::before{
+    content: "";
+    display: block;
+    width: 24.2%;
+    order: 1;
+}
+#works_cording .cording::after{
+    content: "";
+    display: block;
+    width: 24.2%;
+    order: 1;
+}
+#works_cording .cording .flex-item{
+	flex-basis: 24.2%;
+    margin: 0 0px 10px 0;
+}
+#works_cording .cording .image-trim{
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%; /* 比率 */
+}
+#works_cording .cording .image-trim img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
@@ -338,6 +393,60 @@ body {
 }
 
 
+/* works_cording */
+#other{
+    margin-top: -30px;
+    padding-top: 30px;
+}
+.works #other .web-txt{
+    font-size: 20px;
+    margin: 50px 0 10px 10px;
+}
+#other .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
+    z-index: 1;
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,0.75);
+}
+#other .other{/*ベースになるギャラリーを横並びに*/
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+#other .other::before{
+    content: "";
+    display: block;
+    width: 24.2%;
+    order: 1;
+}
+#other .other .flex-item{
+	flex-basis: 24.2%;
+    margin: 0 0px 10px 0;
+}
+#other .other .image-trim{
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%; /* 比率 */
+}
+#other .other .image-trim img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
 .modaal-fullscreen .modaal-content-container{/*full画面の色設定*/
 	color: #fff;
 	text-align: center;
@@ -360,9 +469,6 @@ body {
 .caption{
     display: block;
     padding: 10px 0;
-}
-.modaal-content-container img{
-    width: 630px;
 }
 
 .modaal-close:after, .modaal-close:before{
@@ -395,7 +501,8 @@ body {
     display: none;
     position: fixed;
     right: 15px;
-    bottom: 60px;
+    bottom: 20px;
+    z-index: 10;
 }
 .pagetop a{
     display: block;
@@ -403,13 +510,13 @@ body {
     width: 50px;
     height: 50px;
     text-align: center;
-    background: "#7db4e6";
+    background: #D49EBD;
     border-radius: 50%;
     line-height: 50px;
 }
 .pagetop a i{
     font-size: 20px;
-    color: #fff;
+    color:#fff;
     line-height: 50px;
 }
 
@@ -438,6 +545,12 @@ footer{
         position: relative;
         overflow-y: scroll;
     }
+    /*.modaal-content-container img{
+        width: 100%;
+    }*/
+    p.cording img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1120px) {
@@ -447,16 +560,28 @@ footer{
 }
 
 @media only screen and (max-width: 768px) {
+    #works_cording .cording .flex-item{
+        flex-basis: 49.5%;
+    }
     #works_banner .banner li{
         width: 49.3%;
     }
     #works_product .gallery li{
         width: 32%;
     }
+    #other .other .flex-item{
+        flex-basis: 32%;
+    }
 }
 
 @media only screen and (max-width: 660px) {
-    .modaal-content-container img{
+    .works_product img{
+        width: 100%;
+    }
+
+    p.banner img,
+    p.product img,
+    p.other img{
         width: 100%;
     }
 }
