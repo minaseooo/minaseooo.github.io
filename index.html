@@ -4,6 +4,7 @@
   <meta name="keywords" content="ポートフォリオ">
   <meta name="description" content="Memorie">
   <meta name="auther" content="Memorie">
+  <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Memorie</title>
   <link rel="stylesheet" href="css/reset.css">
