@@ -596,6 +596,7 @@ footer{
 
     p.banner img,
     p.product img,
+    p.product video,
     p.other img{
         width: 100%;
     }
