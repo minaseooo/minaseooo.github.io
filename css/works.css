@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-/*メニュー*/
+
 /*メニュー*/
 .header nav {
     position: fixed;
@@ -314,6 +314,7 @@ body {
 
 
 
+
 /* works_banner */
 #works_banner{
     margin-top: -30px;
@@ -350,6 +351,13 @@ body {
     max-width:100%;
 	height:auto;
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
+    pointer-events: none;
+}
+p.banner img{
+    pointer-events: none;
+}
+#works_banner a{
+    display: block;
 }
 
 
@@ -390,6 +398,13 @@ body {
 	max-width:100%;
 	height:auto;
 	vertical-align: bottom;/*画像の下にできる余白を削除*/
+    pointer-events: none;
+}
+p.product img{
+    pointer-events: none;
+}
+#works_product a{
+    display: block;
 }
 
 

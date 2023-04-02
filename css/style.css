@@ -17,6 +17,10 @@ body {
     overflow: hidden;
   }
 
+  img{
+    pointer-events: none;
+  }
+
 
   /*topここから*/
   .top{
