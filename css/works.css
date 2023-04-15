@@ -596,11 +596,12 @@ footer{
     #works_web .exp02,
     #works_web .exp03{
         position: relative;
-        overflow-y: scroll;
+        overflow-y: hidden;
     }
     /*.modaal-content-container img{
         width: 100%;
     }*/
+    p.design img,
     p.cording img{
         width: 100%;
     }
@@ -613,6 +614,9 @@ footer{
 }
 
 @media only screen and (max-width: 768px) {
+    #works_web .design .flex-item{
+        flex-basis: 49.5%;
+    }
     #works_cording .cording .flex-item{
         flex-basis: 49.5%;
     }
