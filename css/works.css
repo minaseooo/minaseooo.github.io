@@ -256,6 +256,44 @@ body {
 }
 
 
+
+#works_web .hide-area{/*モーダル表示をする場所をあらかじめ隠す*/
+    z-index: 1;
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,0.75);
+}
+#works_web .design{/*ベースになるギャラリーを横並びに*/
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  20px 5px 5px 5px;
+}
+#works_web .design .flex-item{
+	flex-basis: 24.2%;
+    margin: 0 0px 10px 0;
+}
+#works_web .design .image-trim{
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%; /* 比率 */
+}
+#works_web .design .image-trim img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
 /* works_cording */
 #works_cording{
     margin-top: -30px;
