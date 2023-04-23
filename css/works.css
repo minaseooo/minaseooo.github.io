@@ -273,6 +273,18 @@ body {
     justify-content: space-between;
     margin:  20px 5px 5px 5px;
 }
+#works_web .design::before{
+    content: "";
+    display: block;
+    width: 24.2%;
+    order: 1;
+}
+#works_web .design::after{
+    content: "";
+    display: block;
+    width: 24.2%;
+    order: 1;
+}
 #works_web .design .flex-item{
 	flex-basis: 24.2%;
     margin: 0 0px 10px 0;
@@ -426,16 +438,46 @@ p.banner img{
     max-width: 1300px;
     margin: 0 5px;
 }
-#works_product .gallery li{
+#works_product .gallery::before{
+    content: "";
+    display: block;
+    width: 32.3%;
+    order: 1;
+}
+#works_product .gallery::after{
+    content: "";
+    display: block;
+    width: 32.3%;
+    order: 1;
+}
+#works_product .gallery .flex-item{
+	flex-basis: 19.3%;
+    margin: 0 0px 10px 0;
+}
+#works_product .gallery .image-trim{
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%; /* 比率 */
+}
+#works_product .gallery .image-trim img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*#works_product .gallery li{
 	width:19.2%;
     padding: 5px 0px;
     list-style: none;
-}
+}*/
 /*画像の横幅を100%にしてレスポンシブ化*/
-#works_product img{
+/*#works_product img{
 	max-width:100%;
 	height:auto;
-	vertical-align: bottom;/*画像の下にできる余白を削除*/
+	vertical-align: bottom;
     pointer-events: none;
 }
 p.product img{
@@ -443,7 +485,7 @@ p.product img{
 }
 #works_product a{
     display: block;
-}
+}*/
 
 
 /* works_cording */
@@ -598,11 +640,13 @@ footer{
         position: relative;
         overflow-y: hidden;
     }
+
     /*.modaal-content-container img{
         width: 100%;
     }*/
     p.design img,
-    p.cording img{
+    p.cording img
+    p.gallery img{
         width: 100%;
     }
 }
@@ -623,8 +667,8 @@ footer{
     #works_banner .banner li{
         width: 49.3%;
     }
-    #works_product .gallery li{
-        width: 32%;
+    #works_product .gallery .flex-item{
+        flex-basis: 32.3%;
     }
     #other .other .flex-item{
         flex-basis: 32%;
